@@ -30,6 +30,7 @@ body {
 .block-6,
 .block-7,
 .block-8 {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -815,6 +816,7 @@ body {
     margin-bottom: -35px;
     margin-left: 25%;
     transform: rotate(90deg); }
+
 
   .arrow_hide {
     display: block; }
