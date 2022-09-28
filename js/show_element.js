@@ -1,16 +1,16 @@
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
-            change.target.classList.add('container-link_show');
+            change.target.classList.add('main-information_show');
         }
         if (!change.isIntersecting) {
-            change.target.classList.remove('container-link_show');
+            change.target.classList.remove('main-information_show');
         }
     });
 }
 let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.container-link');
+let elements = document.querySelectorAll('.main-information');
 for (let elm of elements) {
     observer.observe(elm);
 }

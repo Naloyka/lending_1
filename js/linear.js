@@ -93,7 +93,7 @@ createLine()
 
 window.addEventListener('load', createLine)
 window.addEventListener('resize', createLine)
-window.addEventListener('DOMContentLoaded', createLine)
+window.addEventListener('DOMContentLoaded', setTimeout)
 
 new LeaderLine(b, a, optionLine);
 new LeaderLine(yandex, ecomImg, optionLine);
