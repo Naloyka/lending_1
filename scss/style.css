@@ -19,9 +19,6 @@
   font-family: Montserrat;
   box-sizing: border-box; }
 
-body {
-  scroll-behavior: smooth; }
-
 .block-1,
 .block-2,
 .block-3,
@@ -47,7 +44,14 @@ body {
 .container-link {
   display: flex;
   flex-direction: column;
-  max-width: 655px; }
+  max-width: 676px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s; }
+  .container-link_show {
+    opacity: 1;
+    transition: all 1s;
+    transform: scale(1); }
 
 .title {
   color: white;
@@ -106,10 +110,8 @@ body {
   display: flex;
   align-items: center;
   height: 250px;
-  width: 700px;
   height: 432px;
-  gap: 60px;
-  margin-left: -100px; }
+  gap: 60px; }
 
 .ecom__img {
   display: block;
@@ -397,7 +399,12 @@ body {
   -webkit-box-shadow: 0px -1px 66px 4px rgba(255, 255, 255, 0.63) inset;
   -moz-box-shadow: 0px -1px 66px 4px rgba(255, 255, 255, 0.63) inset;
   box-shadow: 0px -1px 66px 4px rgba(255, 255, 255, 0.63) inset;
-  padding: 16px; }
+  padding: 16px;
+  opacity: 0;
+  transition: all 1s; }
+  .card__item_show {
+    opacity: 1;
+    transition: all 1s; }
 
 .title-card {
   color: white;
@@ -793,7 +800,10 @@ body {
   .advantages {
     flex-direction: column;
     align-items: center;
-    height: auto; } }
+    height: auto; }
+
+  .block-5 .container-link {
+    max-width: 520px; } }
 @media (max-width: 768px) {
   .title-38 {
     font-size: 30px; }

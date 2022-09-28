@@ -34,36 +34,6 @@ const optionArc = {
     endSocketGravity: 400,
 }
 
-
-
-
-/*
-
-let wbLine;
-let aliexpressLine;
-let marketAliexpressLine;
-let marketYandexLine;
-let marketSberbankLine;
-let marketOzonLine;
-let marketWbLine;
-
-let wbLineBig;
-let aliexpressLineBig;
-let marketAliexpressLineBig;
-let marketYandexLineBig;
-let marketSberbankLineBig;
-let marketOzonLineBig;
-let marketWbLineBig;
-let wbLineMin;
-let aliexpressLineMin;
-let marketAliexpressLineMin;
-let marketYandexLineMin;
-let marketSberbankLineMin;
-let marketOzonLineMin;
-let marketWbLineMin;
-*/
-
-
 let wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 15, y: 85 }), LeaderLine.pointAnchor(ecomImg, { x: 100, y: 20 }), optionLine)
 let aliexpressLine = new LeaderLine(LeaderLine.pointAnchor(aliexpress, { x: 15, y: 15 }), LeaderLine.pointAnchor(ecomImg, { x: 100, y: 100 }), optionLine)
 let marketAliexpressLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseAliexpress, { x: 75, y: 48 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 30, y: 160 }), optionArc)
@@ -87,9 +57,6 @@ function createLine() {
     notebookLine.remove()
     console.log("удалить средние")
 
-    console.log(wbLine)
-
-
     if (screenWidth > 480 && screenWidth < 1345) {
         wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 5, y: 55 }), LeaderLine.pointAnchor(ecomImg, { x: 72, y: 15 }), optionLine)
         aliexpressLine = new LeaderLine(LeaderLine.pointAnchor(aliexpress, { x: 7, y: 15 }), LeaderLine.pointAnchor(ecomImg, { x: 72, y: 72 }), optionLine)
@@ -110,7 +77,6 @@ function createLine() {
         marketOzonLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseOzon, { x: 70, y: 0 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 310, y: 100 }), optionArc)
         marketWbLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseWb, { x: 10, y: 24 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 150, y: 85 }), optionArc)
         notebookLine = new LeaderLine(LeaderLine.pointAnchor(imgGroupMarketplace, { x: 0, y: 80 }), LeaderLine.pointAnchor(notebook, { x: 200, y: 20 }), optionArc)
-
 
     } else {
         wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 5, y: 35 }), LeaderLine.pointAnchor(ecomImg, { x: 50, y: 10 }), optionLine)
