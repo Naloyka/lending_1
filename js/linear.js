@@ -42,6 +42,12 @@ let marketSberbankLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseSberba
 let marketOzonLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseOzon, { x: 70, y: 0 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 310, y: 100 }), optionArc)
 let marketWbLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseWb, { x: 10, y: 24 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 150, y: 85 }), optionArc)
 let notebookLine = new LeaderLine(LeaderLine.pointAnchor(imgGroupMarketplace, { x: 0, y: 80 }), LeaderLine.pointAnchor(notebook, { x: 200, y: 20 }), optionArc)
+let line1 = new LeaderLine(b, a, optionLine);
+let line2 = new LeaderLine(yandex, ecomImg, optionLine);
+let line3 = new LeaderLine(sberbank, ecomImg, optionLine);
+let line4 = new LeaderLine(ozon, ecomImg, optionLine);
+
+
 
 function createLine() {
 
@@ -55,7 +61,13 @@ function createLine() {
     marketOzonLine.remove()
     marketWbLine.remove()
     notebookLine.remove()
+    line1.remove()
+    line2.remove()
+    line3.remove()
+    line4.remove()
     console.log("удалить средние")
+
+
 
     if (screenWidth > 480 && screenWidth < 1345) {
         wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 5, y: 55 }), LeaderLine.pointAnchor(ecomImg, { x: 72, y: 15 }), optionLine)
@@ -88,6 +100,11 @@ function createLine() {
         marketWbLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseWb, { x: 0, y: 12 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 75, y: 40 }), optionArc)
         notebookLine = new LeaderLine(LeaderLine.pointAnchor(imgGroupMarketplace, { x: 0, y: 50 }), LeaderLine.pointAnchor(notebook, { x: 120, y: 10 }), optionArc)
     }
+
+    line1 = new LeaderLine(b, a, optionLine);
+    line2 = new LeaderLine(yandex, ecomImg, optionLine);
+    line3 = new LeaderLine(sberbank, ecomImg, optionLine);
+    line4 = new LeaderLine(ozon, ecomImg, optionLine);
 }
 createLine()
 
@@ -95,7 +112,3 @@ window.addEventListener('load', createLine)
 window.addEventListener('resize', createLine)
 window.addEventListener('DOMContentLoaded', setTimeout)
 
-new LeaderLine(b, a, optionLine);
-new LeaderLine(yandex, ecomImg, optionLine);
-new LeaderLine(sberbank, ecomImg, optionLine);
-new LeaderLine(ozon, ecomImg, optionLine);
