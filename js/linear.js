@@ -34,6 +34,11 @@ const optionArc = {
     endSocketGravity: 400,
 }
 
+window.addEventListener('DOMContentLoaded', setTimeout)
+window.addEventListener('load', createLine)
+window.addEventListener('resize', createLine)
+
+
 let wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 15, y: 85 }), LeaderLine.pointAnchor(ecomImg, { x: 100, y: 20 }), optionLine)
 let aliexpressLine = new LeaderLine(LeaderLine.pointAnchor(aliexpress, { x: 15, y: 15 }), LeaderLine.pointAnchor(ecomImg, { x: 100, y: 100 }), optionLine)
 let marketAliexpressLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseAliexpress, { x: 75, y: 48 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 30, y: 160 }), optionArc)
@@ -107,8 +112,4 @@ function createLine() {
     line4 = new LeaderLine(ozon, ecomImg, optionLine);
 }
 createLine()
-
-window.addEventListener('load', createLine)
-window.addEventListener('resize', createLine)
-window.addEventListener('DOMContentLoaded', setTimeout)
 
