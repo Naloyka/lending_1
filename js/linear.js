@@ -52,8 +52,6 @@ let line2 = new LeaderLine(yandex, ecomImg, optionLine);
 let line3 = new LeaderLine(sberbank, ecomImg, optionLine);
 let line4 = new LeaderLine(ozon, ecomImg, optionLine);
 
-
-
 function createLine() {
 
     let screenWidth = window.innerWidth
@@ -72,8 +70,6 @@ function createLine() {
     line4.remove()
     console.log("удалить средние")
 
-
-
     if (screenWidth > 480 && screenWidth < 1345) {
         wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 5, y: 55 }), LeaderLine.pointAnchor(ecomImg, { x: 72, y: 15 }), optionLine)
         aliexpressLine = new LeaderLine(LeaderLine.pointAnchor(aliexpress, { x: 7, y: 15 }), LeaderLine.pointAnchor(ecomImg, { x: 72, y: 72 }), optionLine)
@@ -83,7 +79,6 @@ function createLine() {
         marketOzonLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseOzon, { x: 50, y: 0 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 195, y: 80 }), optionArc)
         marketWbLine = new LeaderLine(LeaderLine.pointAnchor(marketplaseWb, { x: 0, y: 12 }), LeaderLine.pointAnchor(arrowRoundImg, { x: 90, y: 50 }), optionArc)
         notebookLine = new LeaderLine(LeaderLine.pointAnchor(imgGroupMarketplace, { x: 0, y: 80 }), LeaderLine.pointAnchor(notebook, { x: 200, y: 20 }), optionArc)
-
 
     } else if (screenWidth > 1345) {
         wbLine = new LeaderLine(LeaderLine.pointAnchor(wb, { x: 15, y: 85 }), LeaderLine.pointAnchor(ecomImg, { x: 100, y: 20 }), optionLine)

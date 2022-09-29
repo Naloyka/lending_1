@@ -15,7 +15,6 @@ for (let elm of elements) {
     observer.observe(elm);
 }
 
-
 function onEntry1(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -32,20 +31,3 @@ let elements1 = document.querySelectorAll('.card__item');
 for (let elm of elements1) {
     observer1.observe(elm);
 }
-
-/*
-function onEntry3(entry) {
-    entry.forEach(change => {
-        if (change.isIntersecting) {
-            change.target.classList.add('title_show');
-        }
-       
-    });
-}
-
-let observer3 = new IntersectionObserver(onEntry1, options);
-let elements3 = document.querySelectorAll('.title');
-for (let elm of elements3) {
-    observer3.observe(elm);
-}
-*/

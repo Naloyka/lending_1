@@ -1015,6 +1015,27 @@
         }
     }
 
+    .link__items {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .main-information {
+        align-items: center;
+    }
+
+    .main-information_show {
+        align-items: center;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .title-black {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1214,4 +1235,11 @@
         transform: scale(0.4);
 
     }
+
+    .img-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+ 
 }
